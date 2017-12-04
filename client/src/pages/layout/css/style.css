@@ -1,0 +1,247 @@
+/* Some simple styling */
+
+.app {
+    display: flex;
+    color: #2e3327;
+    font-family: "PT-sans", sans-serif;
+    font-size: 16px;
+    margin: 10px;
+}
+
+a {
+    color: #2e3327;
+}
+
+h1 a {
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+main {
+    margin: 7rem auto;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.page-wrap {
+    display: flex;
+    margin-top: 7rem;
+}
+
+.menu-logo {
+    position: fixed;
+    height: 100%;
+    width: 13rem;
+}
+
+.underdash {
+    border-bottom: 2px dashed #aaa;
+}
+
+.side-panel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 4.5rem auto;
+    width: 50rem;
+}
+
+.big-logo {
+    letter-spacing: 7px;
+    white-space: nowrap;
+    font-size: 5rem;
+    font-weight: 900;
+
+    /* color: #333; */
+    color: #4d741e;
+    margin: 0;
+    z-index: 1;
+}
+
+.sub-logo {
+    letter-spacing: 3px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.selfie {
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 48px 0;
+    display: block;
+    width: 200px;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.contact {
+    position: absolute;
+    bottom: 25px;
+    font-size: small;
+    color: #838a7a;
+}
+
+.contact p {
+    margin: 0.1rem;
+}
+
+.dim {
+    color: #ccc;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+nav a::before {
+    content: "➜ ";
+    color: #fff;
+}
+
+nav a:hover::before {
+    color: #aaa;
+}
+
+.nav-selected::before {
+    content: "➜ ";
+    color: #39051a;
+}
+
+.center-by-margin {
+    margin: 0 auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.margin-bottom {
+    margin-bottom: 20rem;
+}
+
+.kmom-list {
+    list-style: none;
+}
+
+@media (max-width: 940px) {
+    .app {
+        display: block;
+    }
+
+    .menu-logo {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    .big-logo {
+        position: relative;
+        letter-spacing: normal;
+        font-size: 2rem;
+        max-width: 95%;
+    }
+
+    .container {
+        margin-left: 0;
+        max-width: 90%;
+    }
+
+    .header-nav {
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    nav a::before {
+        content: "";
+        color: #fff;
+    }
+
+    nav a:hover::before {
+        color: #aaa;
+    }
+
+    nav a:hover::after {
+        color: #aaa;
+    }
+
+    .nav-selected::before {
+        content: "<";
+        color: #39051a;
+    }
+
+    .nav-selected::after {
+        content: ">";
+        color: #39051a;
+    }
+
+    /*
+    .side-panel {
+        display: none;
+    }
+    */
+
+    .contact {
+        display: none;
+    }
+
+    .mini-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-logo {
+        letter-spacing: normal;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* Utils */
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+.img-100 {
+    width: 100%;
+}
+
+.text-small {
+    font-size: smaller;
+}
+
+.text-italic {
+    font-style: italic;
+}
